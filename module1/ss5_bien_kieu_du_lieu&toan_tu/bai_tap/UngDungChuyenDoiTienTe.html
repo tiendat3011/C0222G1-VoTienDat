@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th style="text-align: center" >Amount</th>
+            <th style="text-align: center" >Form Curency</th>
+            <th style="text-align: center" >Curency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="num"> </td>
+            <td><select name="" id="select1">
+                <option value="vnd" id="dong">Vnd</option>
+                <option value="usd" id="dola">Usd</option>
+            </select></td>
+            <td><select name="" id="select2">
+
+                <option value="vnd" id="dong">Vnd</option>
+                <option value="usd" id="dola">Usd</option>
+            </select></td>
+        </tr>
+    </table>
+    <button onclick="doitien()">Convert</button>
+</form>
+<script>
+    function doitien() {
+        let a = document.getElementById("num").value;
+        let b = document.getElementById("select1").value;
+        let c = document.getElementById("select2").value;
+        if (b = "vnd" && c == "usd" ){
+            alert(a/24000)
+        }
+        else
+        alert(a*24000)
+    }
+
+
+
+</script>
+</body>
+</html>
