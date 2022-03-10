@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai10</title>
+</head>
+<body>
+<script>
+    var a= parseInt(prompt("Nhập số điện "));
+    if (0<a && a<=50){
+        var money = a*1678
+        alert('số tiền điện mà bạn phải trả là' +money +'vnd')
+    } else if (51<a && a<=100 ){
+        var money= (50*1678+(a-50)*1734)
+        alert('số tiền điện mà bạn phải trả là' +money +'vnd')
+    } else if (101<a && a<=200){
+        var money= (50*1678+50*1734+(a-100)*2014)
+        alert('số tiền điện mà bạn phải trả là' +money +'vnd')
+    } else if (201<a && a<=300){
+        var money= (50*1678+50*1734+100*2014+(n-200)*2536)
+        alert('số tiền điện mà bạn phải trả là' +money +'vnd')
+    } else {
+        var money= (50*1678+50*1734+100*2014+100*2536+(n-300)*2834)
+        alert('số tiền điện mà bạn phải trả là' +money +'vnd')
+    }
+
+</script>
+</body>
+</html>
