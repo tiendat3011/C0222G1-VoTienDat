@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng cơ thể</title>
+</head>
+<body>
+<label for="height"> Nhập chiều cao</label>
+<input type="number" name="height" id="height">
+<label for="weight">Nhập cân nặng</label>
+<input type="number" name="weight" id="weight">
+<button type="button" onclick="chiso()">Chỉ số</button>
+<script>
+    function chiso() {
+        let a = parseFloat(document.getElementById("height").value);
+        let b = parseFloat(document.getElementById("weight").value);
+        var c = b / (a * a);
+        alert("Chỉ số cân nặng của bạn là:" +c);
+        if (c < 18) {
+            alert("Underweight");
+        } else if (c < 25.0) {
+            alert("Normal");
+        } else if (c < 30.0) {
+            alert("Overweight");
+        } else {
+            alert("Obese");
+        }
+
+    }
+</script>
+</body>
+</html>

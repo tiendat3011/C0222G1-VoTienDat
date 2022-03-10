@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra bội số</title>
+</head>
+<body>
+<h4>Nhập a:</h4>
+<input type="number" id="a" value="num">
+<h4>Nhập b:</h4>
+<input type="number" id="b" value="num"><br />
+<button type="button" id="button" value="Tính toán" onclick="Result()">Tính toán</button>
+<input type="text" name="kq" id="kq">
+<script>
+        function Result(){
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c= a%b;
+        if (c===0)
+            document.getElementById("kq").value="Số " +a +" chia hết cho số " +b;
+        else
+            document.getElementById("kq").value="Số " +a +" không chia hết cho số " +b;
+        }
+</script>
+
+</body>
+</html>
