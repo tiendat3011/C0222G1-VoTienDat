@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>báo nhiệt độ</title>
 </head>
 <body>
 <script>
-    let a = parseFloat(prompt("Nhiệt độ hiện tại: "));
-    while (a > 100 && a < 20) {
+    do {let a = parseInt(prompt("Nhiệt độ hiện tại: "));
         if (a > 100) {
             alert("Giảm nhiệt độ!!");
-        } else if (a < 20) {
+        } if (a < 20) {
             alert("Tăng nhiệt độ!!");
-        } else {
-            alert("OK")
+        } if ( a<=100 && a>=20) {
+            alert("OK");
             break;
         }
     }
+    while (true)
 </script>
 </body>
 </html>

@@ -8,15 +8,16 @@
 <script>
     let num1=0;
     let num2=1;
-    for (let i=0 ; i<20 ; i++)
+    let sum;
+    let s=0;
+    for (let i=1 ; i<=20 ; i++)
     {
         sum=num1+num2;
+        s = s + sum;
         num1=num2;
         num2=sum;
-        S = s + sum
-        document.write(s);
     }
-
+    document.write(s);
 </script>
 </body>
 </html>
