@@ -1,20 +1,15 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
 </head>
-<script>
-    let a = 0;
-    let b = 2;
-    let i = 1;
-    // a += b + ++i;
-    // a = a + b + 1 = 0 + 2 + 2 = 4
-    // a += b + i++;
-    // a = a + b + 1 = 0 + 2 + 1 = 3
-    //i = 2
-    a += b + ++i + ++i ;
-    console.log(a);
+<body>
+<script >
+    let x = [1,3,5,7];
+    let y = [2,4,6];
+    x[2] = y[x.length-3] + x [ x[0] + y[0] ];
+    console.log(x);
 </script>
 </body>
 </html>
