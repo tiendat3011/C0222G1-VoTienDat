@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>bai3</title>
+</head>
+<body>
+<span id="text"></span>
+<script>
+    function bai3()
+    {
+        let a = parseInt(prompt("nhập số thứ nhất :"));
+        let b = parseInt(prompt("nhập số thứ hai :"));
+        if (a > b){
+            let result1 = document.getElementById("text").innerHTML = (a +" số thứ nhất lớn hơn số thứ hai : " + b);
+            return result1;
+        }
+        else
+        {
+            sum = a + b ;
+            let result2 = document.getElementById("text").innerHTML = a+ " + "+b+ " = " + sum;
+            return result2;
+        }
+    }
+    bai3()
+
+</script>
+</body>
+</html>
