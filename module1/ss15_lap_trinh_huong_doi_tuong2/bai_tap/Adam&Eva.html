@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        decrease() {
+            --this.weight;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        say(text) {
+            this.text = text;
+            return this.text;
+            // console.log(text);
+        }
+
+        eat(apple) {
+            if (apple.weight > 0) {
+                ++this.weight;
+                apple.decrease();
+                return this.name + " đã tăng lên " + this.weight + " / " + "Táo đã giảm cân còn: " + apple.weight;
+            }
+        }
+
+        check(apple) {
+            return apple.weight;
+        }
+    }
+    let t1 = new Apple(10);
+    let n1 = new Human("Dat", "male", 65);
+    console.log(n1.eat(t1))
+</script>
+</html>
