@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra ki tu</title>
+</head>
+<body>
+<script>
+    let a = ['o', 'u', 'i', 'a', 'e'];
+    let V = prompt("nhập chữ");
+    let flag;
+    for (let i = 0; i < a.length; i++) {
+        flag = true;
+        if (a.indexOf(V) > -1) {
+            alert(V +" là nguyên âm");
+            break;
+        } else {
+            alert(V +" là phụ âm");
+        }
+    }
+
+</script>
+</body>
+</html>

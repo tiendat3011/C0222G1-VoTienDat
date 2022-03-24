@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function viethoa(string) {
+        var aaa = string.toLowerCase().split(" ");
+        for(var i = 0; i< aaa.length; i++){
+            aaa[i] = aaa[i][0].toUpperCase() + aaa[i].slice(1);
+        }
+        document.write(aaa.join(" "));
+        return aaa;
+    }
+    viethoa("tRuong TaN HAI");
+</script>
+
+</body>
+</html>

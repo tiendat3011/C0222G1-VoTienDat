@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    function tinhtong(m, n) {
+        let a = [];
+        let sum = 0;
+        for (let i = 0; i < m; i++) {
+            let arrayb = [];
+            for (let j = 0; j < n; j++) {
+                let x = parseInt(prompt("nhập pt"));
+                arrayb.push(x);
+            }
+            a.push(arrayb);
+        }
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++) {
+                if (a[i][j] % 2 === 0) {
+                    sum = sum + a[i][j]
+                }
+            }
+        }
+        return sum
+    }
+    // console.log(tinhtong(parseInt(prompt("m")), parseInt(prompt("n"))));
+    let a = prompt("Nhập m: ");
+    let b = prompt("Nhập n: ");
+    console.log(tinhtong(a,b))
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    function lonnhat(arr) {
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            a = Math.max(...arr[i]);
+            arr1.push(a);
+        }
+        let max = Math.max(...arr1)
+        return max;
+    }
+
+    function nhonhat(arr) {
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            a = Math.min(...arr[i]);
+            arr1.push(a);
+        }
+        let min = Math.min(...arr1);
+        return min;
+    }
+    let arr = [[1, 4, 5, 7], [29, 13, 41, 2], [16, 20, 3, 8]]
+    let max = lonnhat(arr);
+    let min = nhonhat(arr);
+    console.log(lonnhat(arr));
+    console.log(nhonhat(arr));
+</script>
+
+</body>
+</html>

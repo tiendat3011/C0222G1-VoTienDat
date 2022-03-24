@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập chuỗi bất kì");
+    let b = [];
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        // Note: có điều kiện khác -1 !!
+        if (b.indexOf(a[i]) === -1) {
+            b.push(a[i])
+            count++
+        }
+    }
+    alert(count);
+</script>
+</body>
+</html>

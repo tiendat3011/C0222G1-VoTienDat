@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuetncn</title>
+</head>
+<body>
+<script>
+        let a = prompt("nhập lương");
+        let b = a*(20/100)
+        let c = a*(10/100)
+        let d = a*(5/100)
+        if (a>15){
+            luong = (a-b)*1000000
+            alert("Lương nhận được sau thuế là" + luong)
+        }else if (a>=7 && a<=15){
+            luong = (a-c)*1000000
+            alert("Lương nhận được sau thuế là" + luong)
+        }else{
+            luong = (a-d)*1000000
+            alert("Lương nhận được sau thuế là" + luong)
+        }
+</script>
+</body>
+</html>

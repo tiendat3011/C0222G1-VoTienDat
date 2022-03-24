@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function total(m, n) {
+        let arr = new Array(m);
+        let total = 0;
+        for (let i = 0; i < m; i++) {
+            arr[i] = new Array(n);
+        }
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                arr[i][j] = parseInt(prompt('nhap gia tri' + i + '' + j));
+                if (arr[i][j] % 2 === 0) {
+                    total += arr[i][j];
+                }
+            }
+        }
+        return total;
+    }
+    let m = parseInt(prompt('nhap m'))
+    let n = parseInt(prompt('nhap n'))
+    console.log(total(m,n))
+</script>
+</script>
+</body>
+</html>

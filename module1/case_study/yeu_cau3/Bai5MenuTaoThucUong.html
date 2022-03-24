@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let i = 0; i < 6; i++) {
+        let menu = parseInt(prompt('1 Cafe' + '\n' + '2 Cam Vắt' + '\n' + '3 Nước ép cà rốt' + '\n' + '4 Nước ép cà chua' + '\n'
+            + '5 Nước Lọc' + '\n' + '6 Nước Dừa' + '\n' + '7 Thoát gọi món'));
+        let tien = [10000, 20000, 30000, 40000, 50000, 60000];
+        let nuocuong = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước Dừa',];
+        if (menu === 7) {
+            alert("Xin cảm ơn");
+            break;
+        } else {
+            let soluong = prompt("Nhập số lượng ly nước")
+            let sum = tien[menu - 1] * soluong
+            alert("Số tiền của " +soluong +" ly " + nuocuong[menu - 1] + " là " + sum);
+            break;
+        }
+    }
+
+</script>
+</body>
+</html>
